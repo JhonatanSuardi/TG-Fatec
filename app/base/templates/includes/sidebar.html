@@ -21,7 +21,7 @@
       </div>
 
       <!-- SidebarSearch Form -->
-      <!--<div class="form-inline">
+      <div class="form-inline">
         <div class="input-group" data-widget="sidebar-search">
           <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
           <div class="input-group-append">
@@ -29,29 +29,49 @@
               <i class="fas fa-search fa-fw"></i>
             </button>
           </div>
-        </div>-->
-      <!-- Sidebar Menu -->
+        </div>
+       <!--Sidebar Menu -->
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-              </li>                
-              <a href="#" class="nav-link {% if 'tables-' in segment %} active {% endif %}">
-               <i class="nav-icon fas fa-table"></i>
+               <li class="nav-item has-treeview {% if 'forms-' in segment %} menu-open {% endif %}">
+                <a href="#" class="nav-link {% if 'forms-' in segment %} active {% endif %}">
+                  <i class="nav-icon fas fa-edit"></i>
+                  <p>
+                    Forms
+                    <i class="fas fa-angle-left right"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="/forms-general.html" class="nav-link {% if 'forms-general' in segment %} active {% endif %}">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>General Elements</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/forms-advanced.html" class="nav-link {% if 'forms-advanced' in segment %} active {% endif %}">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Advanced Elements</p>
+                    </a>
+                  </li>                
                   <li class="nav-item">
                     <a href="/tables-jsgrid.html" class="nav-link {% if 'tables-jsgrid' in segment %} active {% endif %}">
                       <i class="far fa-circle nav-icon"></i>
-                    <p>jsGrid</p>     
+                    <p>jsGrid</p>
+                    </a>     
                   </li>
                   <li class="nav-item">
                     <a href="/tables-data.html" class="nav-link {% if 'tables-data' in segment %} active {% endif %}">
                       <i class="far fa-circle nav-icon"></i>
-                    <p>DADOS</p>                  
-                </li>
-        <!--<li class="nav-item has-treeview {% if 'index' in segment %} menu-open {% endif %}">
-            <a href="#" class="nav-link {% if 'index' in segment %} active {% endif %}">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
-              <p>
+                      <p>DADOS</p>
+                    </a>                  
+                  </li>
+              <!--<li class="nav-item has-treeview {% if 'index' in segment %} menu-open {% endif %}">
+              <a href="#" class="nav-link {% if 'index' in segment %} active {% endif %}">
+                <i class="nav-icon fas fa-tachometer-alt"></i>
+                <p>
                 Dashboard
                 <i class="right fas fa-angle-left"></i>
               </p>
@@ -68,16 +88,8 @@
                   <i class="far fa-circle nav-icon"></i>
                   <p>Dashboard v2</p>
                 </a>
-              <!--</li>
-              <li class="nav-item">
-                <a href="/index3.html" class="nav-link {% if 'index3.html' in segment %} active {% endif %}">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v3</p>
-                </a>
-              </li>
-            </ul>
-            </li>
-          <li class="nav-item">
+              </li>              
+            <li class="nav-item">
             <a href="widgets.html" class="nav-link {% if 'widgets' in segment %} active {% endif %}">
               <i class="nav-icon fas fa-th"></i>
               <p>
@@ -243,13 +255,13 @@
                   <p>Advanced Elements</p>
                 </a>
               </li>
-              <li class="nav-item">
+                  <li class="nav-item">
                 <a href="/forms-editors.html" class="nav-link {% if 'forms-editors' in segment %} active {% endif %}">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Editors</p>
                 </a>
               </li>
-              <li class="nav-item">
+                  <li class="nav-item">
                 <a href="/forms-validation.html" class="nav-link {% if 'forms-validation' in segment %} active {% endif %}">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Validation</p>
@@ -286,7 +298,7 @@
               </li>
             </ul>
           </li>
-          <li class="nav-header">EXAMPLES</li>
+          <!--<li class="nav-header">EXAMPLES</li>
           <li class="nav-item">
             <a href="/calendar.html" class="nav-link">
               <i class="nav-icon far fa-calendar-alt"></i>
