@@ -46,22 +46,22 @@
             <!-- general form elements -->
             <div class="card card-primary">
               <div class="card-header">
-                <h3 class="card-title">Quick Example</h3>
+                <h3 class="card-title">Cadastro de Empresa</h3>
               </div>
               <!-- /.card-header -->
               <!-- form start -->
               <form>
                 <div class="card-body">
                   <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                    <label> Empresa </label>
+                    <input type="text" class="form-control" placeholder="Enter ...">
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    <label> CNPJ </label>
+                    <input type="text" class="form-control" placeholder="Cnpj ...">
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputFile">File input</label>
+                    <label for="exampleInputFile">Carregar Nota</label>
                     <div class="input-group">
                       <div class="custom-file">
                         <input type="file" class="custom-file-input" id="exampleInputFile">
@@ -86,7 +86,69 @@
             </div>
             <!-- /.card -->
 
-            <!-- Form Element sizes -->
+          </div>
+          <!--/.col (left) -->
+          <!-- right column -->
+          <div class="col-md-6">
+            <!-- general form elements disabled -->
+            <div class="card card-warning">
+              <div class="card-header">
+                <h3 class="card-title">Cadastro de Motorista</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <form>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <!-- text input -->
+                      <div class="form-group">
+                        <label>Nome Motorista</label>
+                        <input type="text" class="form-control" placeholder="Enter ...">
+                      </div>
+                    </div>
+                      <div class="form-group">
+                        <label> CPF </label>
+                        <textarea class="form-control" rows="1" placeholder="Enter ..."></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <!-- textarea -->
+                      <div class="form-group">
+                        <label> Transportadora </label>
+                        <textarea class="form-control" rows="1" placeholder="Enter ..."></textarea>
+                      </div>
+                    </div>
+                      <div class="form-group">
+                        <label> Origem </label>
+                        <textarea class="form-control" rows="1" placeholder="Enter ..."></textarea>
+                      </div>
+                    </div>                
+                  <!-- input states -->
+                  <div class="form-group">
+                    <label class="col-form-label" for="inputSuccess"><i class="fas fa-check"></i> Coleta
+                      agendada?</label>
+                    <input type="text" class="form-control is-valid" id="inputSuccess" placeholder="Enter ...">
+                  </div>
+                  <div class="form-group">
+                    <label class="col-form-label" for="inputWarning"><i class="far fa-bell"></i> Destino</label>
+                    <input type="text" class="form-control is-warning" id="inputWarning" placeholder="Enter ...">
+                  </div>
+                  <!--<div class="form-group">
+                    <label class="col-form-label" for="inputError"><i class="far fa-times-circle"></i> Nota
+                      errada?</label>
+                    <input type="text" class="form-control is-invalid" id="inputError" placeholder="Enter ...">
+                  </div>                  
+                      <!-- /.card-body -->
+                      <div class="card-footer">
+                        <button type="submit" class="btn btn-primary">Salvar</button>
+                      </div>
+                    </form>
+                  </div>
+            <!-- /.card -->
+
+            <!-- Form Element sizes 
             <div class="card card-success">
               <div class="card-header">
                 <h3 class="card-title">Different Height</h3>
@@ -100,7 +162,7 @@
               </div>
               <!-- /.card-body -->
             </div>
-            <!-- /.card -->
+            <!-- /.card 
 
             <div class="card card-danger">
               <div class="card-header">
@@ -123,7 +185,7 @@
             </div>
             <!-- /.card -->
 
-            <!-- Input addon -->
+            <!-- Input addon 
             <div class="card card-info">
               <div class="card-header">
                 <h3 class="card-title">Input Addon</h3>
@@ -195,7 +257,7 @@
                     </div>
                     <!-- /input-group -->
                   </div>
-                  <!-- /.col-lg-6 -->
+                  <!-- /.col-lg-6 
                   <div class="col-lg-6">
                     <div class="input-group">
                       <div class="input-group-prepend">
@@ -207,7 +269,7 @@
                   </div>
                   <!-- /.col-lg-6 -->
                 </div>
-                <!-- /.row -->
+                <!-- /.row 
 
                 <h5 class="mt-4 mb-2">With buttons</h5>
 
@@ -226,20 +288,20 @@
                       <li class="dropdown-item"><a href="#">Separated link</a></li>
                     </ul>
                   </div>
-                  <!-- /btn-group -->
+                  <!-- /btn-group 
                   <input type="text" class="form-control">
                 </div>
-                <!-- /input-group -->
+                <!-- /input-group 
 
                 <p>Normal</p>
                 <div class="input-group mb-3">
                   <div class="input-group-prepend">
                     <button type="button" class="btn btn-danger">Action</button>
                   </div>
-                  <!-- /btn-group -->
+                  <!-- /btn-group 
                   <input type="text" class="form-control">
                 </div>
-                <!-- /input-group -->
+                <!-- /input-group 
 
                 <p>Small <code>.input-group.input-group-sm</code></p>
                 <div class="input-group input-group-sm">
@@ -248,18 +310,18 @@
                     <button type="button" class="btn btn-info btn-flat">Go!</button>
                   </span>
                 </div>
-                <!-- /input-group -->
+                <!-- /input-group 
               </div>
               <!-- /.card-body -->
             </div>
             <!-- /.card -->
-            <!-- Horizontal Form -->
+            <!-- Horizontal Form
             <div class="card card-info">
               <div class="card-header">
                 <h3 class="card-title">Horizontal Form</h3>
               </div>
               <!-- /.card-header -->
-              <!-- form start -->
+              <!-- form start 
               <form class="form-horizontal">
                 <div class="card-body">
                   <div class="form-group row">
@@ -283,7 +345,7 @@
                     </div>
                   </div>
                 </div>
-                <!-- /.card-body -->
+                <!-- /.card-body 
                 <div class="card-footer">
                   <button type="submit" class="btn btn-info">Sign in</button>
                   <button type="submit" class="btn btn-default float-right">Cancel</button>
@@ -295,67 +357,67 @@
 
           </div>
           <!--/.col (left) -->
-          <!-- right column -->
+          <!-- right column 
           <div class="col-md-6">
-            <!-- general form elements disabled -->
+            <!-- general form elements disabled
             <div class="card card-warning">
               <div class="card-header">
-                <h3 class="card-title">General Elements</h3>
+                <h3 class="card-title">Cadastro de Motorista</h3>
               </div>
-              <!-- /.card-header -->
+              <!-- /.card-header
               <div class="card-body">
                 <form>
                   <div class="row">
                     <div class="col-sm-6">
-                      <!-- text input -->
+                      <!-- text input
                       <div class="form-group">
-                        <label>Text</label>
+                        <label>Nome Motorista</label>
                         <input type="text" class="form-control" placeholder="Enter ...">
                       </div>
                     </div>
-                    <div class="col-sm-6">
                       <div class="form-group">
-                        <label>Text Disabled</label>
-                        <input type="text" class="form-control" placeholder="Enter ..." disabled>
+                        <label> Documento </label>
+                        <textarea class="form-control" rows="1" placeholder="Enter ..."></textarea>
                       </div>
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-sm-6">
-                      <!-- textarea -->
+                      <!-- textarea 
                       <div class="form-group">
-                        <label>Textarea</label>
-                        <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
+                        <label> Transportadora </label>
+                        <textarea class="form-control" rows="1" placeholder="Enter ..."></textarea>
                       </div>
                     </div>
-                    <div class="col-sm-6">
                       <div class="form-group">
-                        <label>Textarea Disabled</label>
-                        <textarea class="form-control" rows="3" placeholder="Enter ..." disabled></textarea>
+                        <label> Origem </label>
+                        <textarea class="form-control" rows="1" placeholder="Enter ..."></textarea>
                       </div>
-                    </div>
-                  </div>
-
-                  <!-- input states -->
+                    </div>                
+                  <!-- input states
                   <div class="form-group">
-                    <label class="col-form-label" for="inputSuccess"><i class="fas fa-check"></i> Input with
-                      success</label>
+                    <label class="col-form-label" for="inputSuccess"><i class="fas fa-check"></i> Coleta
+                      agendada?</label>
                     <input type="text" class="form-control is-valid" id="inputSuccess" placeholder="Enter ...">
                   </div>
                   <div class="form-group">
-                    <label class="col-form-label" for="inputWarning"><i class="far fa-bell"></i> Input with
-                      warning</label>
+                    <label class="col-form-label" for="inputWarning"><i class="far fa-bell"></i> Destino</label>
                     <input type="text" class="form-control is-warning" id="inputWarning" placeholder="Enter ...">
                   </div>
                   <div class="form-group">
-                    <label class="col-form-label" for="inputError"><i class="far fa-times-circle"></i> Input with
-                      error</label>
+                    <label class="col-form-label" for="inputError"><i class="far fa-times-circle"></i> Nota
+                      errada?</label>
                     <input type="text" class="form-control is-invalid" id="inputError" placeholder="Enter ...">
+                  </div>                  
+                      <!-- /.card-body
+                      <div class="card-footer">
+                        <button type="submit" class="btn btn-primary">Salvar</button>
+                      </div>
+                    </form>
                   </div>
-
-                  <div class="row">
+                  <!--<div class="row">
                     <div class="col-sm-6">
-                      <!-- checkbox -->
+                      <!-- checkbox 
                       <div class="form-group">
                         <div class="form-check">
                           <input class="form-check-input" type="checkbox">
@@ -372,7 +434,7 @@
                       </div>
                     </div>
                     <div class="col-sm-6">
-                      <!-- radio -->
+                      <!-- radio 
                       <div class="form-group">
                         <div class="form-check">
                           <input class="form-check-input" type="radio" name="radio1">
@@ -392,7 +454,7 @@
 
                   <div class="row">
                     <div class="col-sm-6">
-                      <!-- select -->
+                      <!-- select 
                       <div class="form-group">
                         <label>Select</label>
                         <select class="form-control">
@@ -420,7 +482,7 @@
 
                   <div class="row">
                     <div class="col-sm-6">
-                      <!-- Select multiple-->
+                      <!-- Select multiple
                       <div class="form-group">
                         <label>Select Multiple</label>
                         <select multiple class="form-control">
@@ -446,21 +508,21 @@
                     </div>
                   </div>
                 </form>
-              </div>
+              </div>-->
               <!-- /.card-body -->
             </div>
             <!-- /.card -->
-            <!-- general form elements disabled -->
+            <!-- general form elements disabled 
             <div class="card card-secondary">
               <div class="card-header">
                 <h3 class="card-title">Custom Elements</h3>
               </div>
-              <!-- /.card-header -->
+              <!-- /.card-header 
               <div class="card-body">
                 <form>
                   <div class="row">
                     <div class="col-sm-6">
-                      <!-- checkbox -->
+                      <!-- checkbox
                       <div class="form-group">
                         <div class="custom-control custom-checkbox">
                           <input class="custom-control-input" type="checkbox" id="customCheckbox1" value="option1">
@@ -477,7 +539,7 @@
                       </div>
                     </div>
                     <div class="col-sm-6">
-                      <!-- radio -->
+                      <!-- radio 
                       <div class="form-group">
                         <div class="custom-control custom-radio">
                           <input class="custom-control-input" type="radio" id="customRadio1" name="customRadio">
@@ -497,7 +559,7 @@
 
                   <div class="row">
                     <div class="col-sm-6">
-                      <!-- select -->
+                      <!-- select
                       <div class="form-group">
                         <label>Custom Select</label>
                         <select class="custom-select">
@@ -525,7 +587,7 @@
 
                   <div class="row">
                     <div class="col-sm-6">
-                      <!-- Select multiple-->
+                      <!-- Select multiple
                       <div class="form-group">
                         <label>Custom Select Multiple</label>
                         <select multiple class="custom-select">
@@ -582,7 +644,7 @@
                     <input type="range" class="custom-range custom-range-teal" id="customRange3">
                   </div>
                   <div class="form-group">
-                    <!-- <label for="customFile">Custom File</label> -->
+                    <!-- <label for="customFile">Custom File</label>
 
                     <div class="custom-file">
                       <input type="file" class="custom-file-input" id="customFile">
