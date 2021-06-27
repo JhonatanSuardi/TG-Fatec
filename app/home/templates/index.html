@@ -51,7 +51,7 @@
               <span class="info-box-icon bg-info elevation-1"><i class="fas fa-cog"></i></span>
 
               <div class="info-box-content">
-                <span class="info-box-text">Status 1</span>
+                <span class="info-box-text">Transporte</span>
                 <span class="info-box-number">                  
                 </span>
               </div>
@@ -65,7 +65,7 @@
               <span class="info-box-icon bg-info elevation-1"><i class="fas fa-cog"></i></span>
 
               <div class="info-box-content">
-                <span class="info-box-text">Status 2</span>                
+                <span class="info-box-text">Recebida</span>                
               </div>
               <!-- /.info-box-content -->
             </div>
@@ -81,7 +81,7 @@
               <span class="info-box-icon bg-info elevation-1"><i class="fas fa-cog"></i></span>
 
               <div class="info-box-content">
-                <span class="info-box-text">Status 3</span>                
+                <span class="info-box-text">controladoria</span>                
               </div>
               <!-- /.info-box-content -->
             </div>
@@ -93,7 +93,7 @@
               <span class="info-box-icon bg-info elevation-1"><i class="fas fa-cog"></i></span>
 
               <div class="info-box-content">
-                <span class="info-box-text">Status 4</span>                
+                <span class="info-box-text">operacao</span>                
               </div>
               <!-- /.info-box-content -->
             </div>
@@ -109,12 +109,36 @@
               <div class="card-header">
                 <h5 class="card-title">Nota Fiscal</h5>                
               
-                    <div class="chart">
-                      <!-- Sales Chart Canvas -->
-                      <canvas id="salesChart" height="200" style="height: 200px;"></canvas>
-                    </div>                    
-                  </div>
-                </div>
+                  <!--<div class="chart">
+                    <!-- Sales Chart Canvas
+                    <canvas id="salesChart" height="200" style="height: 200px;"></canvas>
+                  </div>-->               
+              </div>
+              <div class="card-body">
+                <table id="example1" class="table table-bordered table-striped">
+                  <thead> 
+                    <tr>
+                      <th>Nome do motorista</th>
+                      <th>CPF</th>
+                      <th>Placa</th>
+                      <th>Status</th>
+                      <th>Nº NF</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  {% for data in response%}
+                  <tr>
+                    <td>{{ data.motorista.nome }}</td>
+                    <td>{{ data.motorista.cpf }}</td>
+                    <td>{{ data.placa }}</td>
+                    <td>{{ data.estado }}</td>
+                    <td>{{ data.numNfe }}</td>
+                  </tr>
+                  {% endfor %}
+                  </tbody>
+                </table>
+              </div>
+            </div>
                 <!--/.col (left) -->
                 <!-- right column -->
                 <div  class ="row"> 
@@ -126,143 +150,51 @@
                     </div>
                     <!-- /.card-header -->
                     <div class="card-body">
-                      <form>
-                        <div class="row">
-                          <div class="col-sm-6">
-                            <!-- text input -->
-                            <div class="form-group">
-                              <label>Nome Motorista</label>
-                              <input type="text" class="form-control" placeholder="Nome ...">
-                            </div>
-                          </div>
-                            <div class="form-group">
-                              <label> CPF </label>
-                              <input type="number" class="form-control" placeholder="CPF ...">
-                            </div>
-                          </div>
-                        </div>
-                         <!-- /.card-header -->
-                    <div class="card-body">
-                      <form>
-                        <div class="row">
-                          <div class="col-sm-5">
-                            <!-- text input -->                            
-                        <div class="form-group">
-                          <label>Descrição</label>
-                          <input type="text" class="form-control" placeholder="Enter ...">
-                        </div>
-                      </div>
-                        <div class="form-group">
-                          <label> Cidade </label>
-                          <input type="text" class="form-control" placeholder="Cidade ...">
-                        </div>
-                      </div>
-                    </div>
-                         <!-- /.card-header -->
-                    <div class="card-body">
-                      <form>
-                        <div class="row">
-                          <div class="col-sm-3">
-                            <!-- text input -->                            
-                        <div class="form-group">
-                          <label>Estado</label>
-                            <select class="form-control select2">
-                              <option selected="selected">AC</option>
-                              <option>AL</option>
-                              <option>AP</option>
-                              <option>AM</option>
-                              <option>BA</option>
-                              <option>CE</option>
-                              <option>DF</option>
-                              <option>ES</option>
-                              <option>GO</option>
-                              <option>MA</option>
-                              <option>MT</option>
-                              <option>MS</option>
-                              <option>MG</option>
-                              <option>PA</option>
-                              <option>PB</option>
-                              <option>PR</option>
-                              <option>PE</option>
-                              <option>PI</option>
-                              <option>RJ</option>
-                              <option>RN</option>
-                              <option>RS</option>
-                              <option>RO</option>
-                              <option>RR</option>
-                              <option>SC</option>
-                              <option>SP</option>
-                              <option>SE</option>
-                              <option>TO</option>                                                        
-                            </select>
-                        </div>
-                        <div class="form-group">
-                          <label> Data Slip </label>
-                            <input type="date" class="form-control" placeholder="Enter ...">
-                          </div>
-                        </div>
-                      </div> 
-                    <!-- /.card-header -->
-                    <div class="card-body">
-                      <form>
-                        <div class="row">
-                          <div class="col-sm-5">
-                            <!-- text input -->                            
-                        <div class="form-group">
-                          <label>Transportadora</label>
-                            <input type="text" class="form-control" placeholder="Transp ...">
-                          </div>
-                        </div>
-                          <div class="form-group">
-                            <label> Num Serie </label>
-                              <input type="number" class="form-control" placeholder="Enter ...">
-                             </div>
-                           </div>
-                          </div> 
-                          <!-- /.card-header -->
-                      <div class="card-body">
-                        <form>
-                          <div class="row">
-                            <div class="col-sm-5">
-                              <!-- text input -->                            
-                          <div class="form-group">
-                            <label>Doc Transp</label>
-                            <input type="text" class="form-control" placeholder="Enter ...">
-                          </div>
-                        </div>
-                          <div class="form-group">
-                            <label> Placa </label>
-                            <input type="text" class="form-control" placeholder="Enter ...">
-                          </div>
-                        </div>
-                      </div> 
-                      <!-- /.card-header -->
-                        <div class="card-body">
-                          <form>
-                            <div class="row">
-                              <div class="col-sm-5">
-                                <!-- text input -->                            
-                            <div class="form-group">
-                              <label>Perfil Carga</label>
-                              <input type="text" class="form-control" placeholder="Enter ...">
-                            </div>
-                          </div>
-                            <div class="form-group">
-                              <label> Estado da Carga</label>
-                              <input type="text" class="form-control" placeholder="Enter ...">
-                            </div>
-                          </div>
-                        </div> 
-                                    <!--<div class="form-group">
-                          <label class="col-form-label" for="inputError"><i class="far fa-times-circle"></i> Nota
-                            errada?</label>
-                          <input type="text" class="form-control is-invalid" id="inputError" placeholder="Enter ...">
-                        </div>                  
-                            <!-- /.card-body -->
-                            <div class="card-footer">
-                              <button type="submit" class="btn btn-primary">Salvar</button>
-                            </div>
-                          </form>
+                      {% if mensagem %}
+                        <h3>{{ mensagem }}</h3>
+                      {%endif%}
+                      <form method="POST" action="/index">
+                        <label>Nome Motorista</label>
+                        <input type="text" name="nomeMotorista" class="form-control" placeholder="Nome ...">
+                     
+                        <label> CPF </label>
+                        <input type="text" name="cpf" class="form-control" placeholder="CPF ...">
+
+                        <label>Descrição</label>
+                        <input type="text" name="descricao" class="form-control" placeholder="Enter ...">
+                        
+                        <label> Cidade </label>
+                        <input type="text" name="cidade" class="form-control" placeholder="Cidade ...">
+                        
+                        <label> Estado Origem </label>
+                        <input type="text" name="estadoOrigem" class="form-control" placeholder="estadoOrigem ...">  
+
+                        <label> numNfe </label>
+                        <input name="numNfe" type="text" class="form-control" placeholder="Enter ...">
+                        
+                        <label> Data Slip </label>
+                        <input name="dataSlip" type="text" class="form-control" placeholder="Enter ...">
+                        
+                        <label>Transportadora</label>
+                        <input name="nomeTransportadora" type="text" class="form-control" placeholder="Transp ...">
+                        
+                        <label> Num Serie </label>
+                        <input name="numSerie" type="text" class="form-control" placeholder="Enter ...">
+                        
+                        <label>Doc Transp</label>
+                        <input name="docTransporte" type="number" class="form-control" placeholder="Enter ...">
+                        
+                        <label> Placa </label>
+                        <input name="placa" type="text" class="form-control" placeholder="Enter ...">
+                        
+                        <label>Perfil Carga</label>
+                        <input name="perfilCarga" type="text" class="form-control" placeholder="Enter ...">
+                      
+                        <label> Estado da Carga</label>
+                        <input name="statusNota" type="number" class="form-control" placeholder="Enter ...">
+                      
+                        <button type="submit" class="btn btn-primary">Salvar</button>
+                      </form>
                         </div>
                   
 {% endblock content %}
