@@ -49,8 +49,6 @@ def index():
             mensagem = "Nota fiscal salva" 
         if response.status_code > 400:
             mensagem = "Não foi possivel salvar a Nota fiscal"
-        response = requests.get(url=url)
-        return render_template('index.html', segment='index.html', title="teste", mensagem=mensagem, response=response)
     
     response = requests.get(url=url)
 
